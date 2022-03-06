@@ -59,7 +59,7 @@
                             <!-- <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li> -->
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#map" class="login">Logistics</a></li>
+                            <li><a href="#map" class="login">Details</a></li>
                             <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
                         </ul>
                     </nav>
@@ -337,7 +337,7 @@
 
 <section id="map" class="section-padding">
     <div class="text-center">
-        <h3>Logistics</h3>
+        <h3>Details</h3>
         <p></p>
     </div>
     <a href="https://www.openstreetmap.org/?mlat=37.41702&mlon=-122.10723#map=17/37.41702/-122.10723"><div id="map-canvas" style="background-image: url('img/map.png'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div></a>
@@ -423,8 +423,8 @@
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
                                 <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
+                                                                  max="10"
+                                                                  placeholder="Attendees (including you)"
                                                                   required>
                             </div>
                         </div>
@@ -432,8 +432,17 @@
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
                                                                 class="" min="0"
-                                                                placeholder="Invite code"
+                                                                placeholder="Invite phrase"
                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-comment"></i><input name="message" class=""
+                                                                  placeholder="Anything you would like to add"
+                                                                  required>
                             </div>
                         </div>
                     </div>
