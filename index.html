@@ -59,7 +59,7 @@
                             <!-- <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li> -->
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#map" class="login">Venue</a></li>
+                            <li><a href="#map" class="login">Details</a></li>
                             <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
                         </ul>
                     </nav>
@@ -103,7 +103,7 @@
             <div class="col-md-6">
                 <p>
                 Bharatanatyam is a classical South Indian dance that
-                combines intricate footwork (nritta) and soulful storytelling (abhinaya). It
+                combines intricate footwork (नृत्त , nritta) and soulful storytelling (अभिनय, abhinaya). It
                 originated thousands of years ago, in the Natya Sastra, authored by the sage
                 Bharata. This dance form is unique in its use of geometric precision, rhythmic
                 complexity and a distinctive language of gestures. As with all
@@ -112,7 +112,7 @@
                 <p>Arangetram, from the Tamil, represents the ஏற்றம்  (<i>etram</i>,
                  ascent) to the அரங்கம் (<i>arangam</i>, stage), by a dancer. In
                 this concert-length solo public recital, the dancer
-                demonstrates mastery of the Bharatanatyam மார்கம்  (<i>margam</i>, way).
+                demonstrates mastery of the Bharatanatyam மார்கம்  (<i>margam</i>,  the Way).
                 The arangetram is the first step in the transition from an
                 amateur to a professional dancer.
                 </p>
@@ -337,7 +337,7 @@
 
 <section id="map" class="section-padding">
     <div class="text-center">
-        <h3>Venue Information</h3>
+        <h3>Details</h3>
         <p></p>
     </div>
     <a href="https://www.openstreetmap.org/?mlat=37.41702&mlon=-122.10723#map=17/37.41702/-122.10723"><div id="map-canvas" style="background-image: url('img/map.png'); background-position: center; background-repeat: no-repeat; background-size: cover;"></div></a>
@@ -365,7 +365,7 @@
                     </div>
                     <div class="row text-center">
                         <div class="col-md-6" style="padding: 5px;">
-                            In addition to driving, you can also take <a href="https://www.vta.org/go/routes/21">VTA bus 21</a> or <a href="https://www.google.com/maps/dir/Mountain+View+City+Hall,+Castro+Street,+Mountain+View,+CA/Cubberley+Theater,+4120+Middlefield+Rd,+Palo+Alto,+CA+94306/@37.4028576,-122.1125576,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x808fb73317df3b7b:0xf7d2a83c3e335985!2m2!1d-122.0817619!2d37.3896022!1m5!1m1!1s0x808fba72b68f50e3:0x7f1e840a17dab1f3!2m2!1d-122.1069944!2d37.4169041!3e1">bike 20 minutes from Downtown Mountain View</a>.
+                            In lieu of driving, you can also take <a href="https://www.vta.org/go/routes/21">VTA bus 21</a> or <a href="https://www.google.com/maps/dir/Mountain+View+City+Hall,+Castro+Street,+Mountain+View,+CA/Cubberley+Theater,+4120+Middlefield+Rd,+Palo+Alto,+CA+94306/@37.4028576,-122.1125576,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x808fb73317df3b7b:0xf7d2a83c3e335985!2m2!1d-122.0817619!2d37.3896022!1m5!1m1!1s0x808fba72b68f50e3:0x7f1e840a17dab1f3!2m2!1d-122.1069944!2d37.4169041!3e1">bike 20 minutes from Downtown Mountain View</a>.
                         </div> 
                         <div class="col-md-6" style="padding: 5px;">
                             <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
@@ -387,7 +387,7 @@
                     </button>
                     <div class="section-padding">
                         <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
+                        <p>We look forward to sharing an evening of dance and music with you.</p>
                         <div id="add-to-cal"></div>
                     </div>
                 </div>
@@ -422,18 +422,27 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
+                                <i class="fa fa-users"></i><input type="number" name="attendees" class="" min="0"
+                                                                  max="10"
+                                                                  placeholder="Attendees (including you)"
                                                                   required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
+                                <i class="fa fa-key"></i><input name="invite_code" id="invite_code"
+                                                                class=""
+                                                                placeholder="Invite phrase"
                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <i class="fa fa-comment"></i><input name="message" class=""
+                                                                  placeholder="Anything you would like to add"
+                                                                  required>
                             </div>
                         </div>
                     </div>
@@ -452,7 +461,8 @@
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>Adapted from <a href="https://github.com/rampatra">Ram Patra's</a> wedding website for <a href="https://github.com/mRaffill">Manonmani's </a> arangetram with <span class="fa fa-heart pulse2"></span> by her mother <a href="https://github.com/shankari">Shankari</a></p>
+                <p>Adapted from <a href="https://github.com/rampatra">Ram Patra's</a> wedding website for <a href="https://github.com/mRaffill">Manonmani's </a> arangetram with <span class="fa fa-heart pulse2"></span> by her mother <a href="https://github.com/shankari">Shankari</a><br>
+                <!-- Want to use this template for your own arangetram? Fork <a href="https://github.com/mRaffill/arangetram-website">this repo on GitHub</a> and follow the instructions in the README to customize.--></p>
             </div>
         </div>
     </div>
