@@ -466,6 +466,22 @@
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-check">
+                              <input class="form-check-input align-bottom" type="checkbox" name="livestream" id="livestream">
+                              <label class="form-check-label align-bottom" for="livestream">Attending via livestream</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <select class="form-select form-control form-input-group" name="vaccination_status" id="vaccination_status" aria-label="Vaccination status">
+                              <option value="UNKNOWN" selected>Please fill in your vaccination status</option>
+                              <option value="ALL_VACCINATED">All of us are vaccinated</option>
+                              <option value="UNVACCINATED_NOT_BY_CHOICE">Some of us are unvaccinated for medical/age reasons</option>
+                              <option value="UNVACCINATED_BY_CHOICE">Some of us are unvaccinated by choice</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <div class="form-input-group">
                                 <i class="fa fa-comment"></i><input name="message" class=""

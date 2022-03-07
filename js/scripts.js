@@ -217,20 +217,24 @@ $(document).ready(function () {
         if (MD5($('#invite_code').val()) !== '563e1f1b6425f9c0c24eb4e1bd068df8') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbxjeGTEChjI5AXS6Ni1f2ErxYuil0rwlao4Idxt42yjHtxkHlTIOKlDq-u0-jXy8hk/exec', data)
-                .done(function (data) {
-                    console.log(data);
-                    if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
-                    } else {
-                        $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal('show');
-                    }
-                })
-                .fail(function (data) {
-                    console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
-                });
+            if ($('#vaccination_status').val() == "UNVACCINATED_BY_CHOICE") {
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> We require all eligible attendees to be vaccinated.'));
+            } else {
+                $.post('https://script.google.com/macros/s/AKfycbxjeGTEChjI5AXS6Ni1f2ErxYuil0rwlao4Idxt42yjHtxkHlTIOKlDq-u0-jXy8hk/exec', data)
+                    .done(function (data) {
+                        console.log(data);
+                        if (data.result === "error") {
+                            $('#alert-wrapper').html(alert_markup('danger', data.message));
+                        } else {
+                            $('#alert-wrapper').html('');
+                            $('#rsvp-modal').modal('show');
+                        }
+                    })
+                    .fail(function (data) {
+                        console.log(data);
+                        $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                    });
+            }
         }
     });
 
