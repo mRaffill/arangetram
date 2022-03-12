@@ -165,10 +165,12 @@ Waypoinsts
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 {
   visibility: hidden
 }
+/*
 .wp8, .wp9 {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s
 }
+*/
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
   visibility: visible
 }
@@ -279,6 +281,41 @@ Hero
   }
   .hero-content {
     padding-top: 40%;
+  }
+  .hero-content img {
+    width: 55%;
+    margin-bottom: 12%;
+  }
+}
+.about-hero {
+  min-height: 750px;
+  background: url('../img/orchestra_picture.jpg') center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+
+  /*.rsvp-btn {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+  }*/
+  .down-arrow a {
+    color: $txt-light;
+  }
+  h1 {
+    color: $txt-light;
+    margin-bottom: 40px;
+  }
+  p.intro {
+    color: $txt-light;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 80px;
+  }
+  .hero-content {
+    padding-top: 60%;
   }
   .hero-content img {
     width: 55%;
@@ -399,14 +436,14 @@ Intro
   width: 80%;
 }
 
-#intro {
+.intro {
   padding-top: 40px;
   img {
     width: 100%;
     height: auto;
   }
 }
-#intro p {
+.intro p {
   text-align: center;
 }
 
