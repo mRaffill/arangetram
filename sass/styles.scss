@@ -322,6 +322,44 @@ Hero
     margin-bottom: 12%;
   }
 }
+.lyrics-hero {
+  min-height: 750px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  position: relative;
+
+  /*.rsvp-btn {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+  }*/
+  .down-arrow a {
+    color: $txt-light;
+  }
+  h1 {
+    color: $txt-light;
+    margin-bottom: 40px;
+  }
+  h3 {
+    color: $txt-secondary;
+    background-color: $keyline-color;
+  }
+  p.intro {
+    color: $txt-light;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 80px;
+  }
+  .hero-content {
+    padding-top: 60%;
+  }
+  .hero-content img {
+    width: 55%;
+    margin-bottom: 12%;
+  }
+}
 .navigation {
   transition: all 300ms ease-in-out;
   position: fixed;
