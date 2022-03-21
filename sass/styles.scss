@@ -327,7 +327,7 @@ Hero
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
-  background-size: contain;
+  background-size: auto 750px;
   position: relative;
 
   /*.rsvp-btn {
@@ -343,8 +343,8 @@ Hero
     margin-bottom: 40px;
   }
   h3 {
-    color: $txt-secondary;
-    background-color: $keyline-color;
+    color: $white-color;
+    background-color: $accent-color;
   }
   p.intro {
     color: $txt-light;
@@ -996,4 +996,19 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+}
+
+/* ==========================================================================
+Song lyrics styles
+========================================================================== */
+div.translation {
+    h4 {
+        padding-bottom: 10px;
+    }
+    .line {
+        padding-bottom: 2px;
+    }
+    .transliteration {
+        font-style: italic;
+    }
 }
