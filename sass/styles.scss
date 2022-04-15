@@ -825,12 +825,12 @@ Embed video
 Google map
 ========================================================================== */
 #map-canvas {
-  height: 500px;
+  height: 600px;
   width: 100%;
 }
 #map-content-wrapper {
   position: relative;
-  margin-top: -550px;
+  margin-top: -650px;
   margin-bottom: 150px;
 }
 #map-content {
@@ -857,6 +857,13 @@ Google map
 }
 .pointer-events-auto {
   pointer-events: auto;
+}
+.no-flowers-icon {
+  display: inline-block;
+  width: 24px; height: 24px;
+  background-image: url('../img/no-picking-flowers.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ==========================================================================
